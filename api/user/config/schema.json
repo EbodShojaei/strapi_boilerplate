@@ -1,0 +1,23 @@
+{
+    "connection": "default",
+    "collectionName": "users",
+    "info": {
+        "name": "user",
+        "description": ""
+    },
+    "options": {
+        "increments": true,
+        "timestamps": true
+    },
+    "attributes": {
+        "username": {
+            "type": "string"
+        },
+        "email": {
+            "type": "email"
+        },
+        "password": {
+            "type": "password"
+        }
+    }
+}

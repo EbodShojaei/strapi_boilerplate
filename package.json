@@ -1,0 +1,35 @@
+{
+  "name": "test-cog",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "migrate": "knex migrate:latest --knexfile ./knexfile.js",
+    "migrate:make": "knex migrate:make --knexfile ./knexfile.js",
+    "migrate:rollback": "knex migrate:rollback --knexfile ./knexfile.js",
+    "seed": "knex seed:run --knexfile ./knexfile.js --specific=users.js && knex seed:run --knexfile ./knexfile.js --specific=posts.js",
+    "seed:make": "knex seed:make --knexfile ./knexfile.js",
+    "prod:build": "docker compose -f docker-compose.prod.yml build",
+    "prod:up": "docker compose -f docker-compose.prod.yml up -d",
+    "prod:down": "docker compose -f docker-compose.prod.yml down",
+    "prod:logs": "docker compose -f docker-compose.prod.yml logs -f",
+    "prod:migrate": "docker compose -f docker-compose.prod.yml exec strapi npm run migrate",
+    "prod:seed": "docker compose -f docker-compose.prod.yml exec strapi npm run seed"
+  },
+  "dependencies": {
+    "knex": "^0.21.18",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "strapi": "^3.6.8",
+    "strapi-admin": "^3.6.8",
+    "strapi-connector-bookshelf": "^3.6.8",
+    "strapi-plugin-content-manager": "^3.6.8",
+    "strapi-plugin-content-type-builder": "^3.6.8",
+    "strapi-plugin-users-permissions": "^3.6.8",
+    "strapi-utils": "^3.6.8"
+  }
+}

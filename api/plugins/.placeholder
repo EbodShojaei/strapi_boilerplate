@@ -1,0 +1,7 @@
+# .placeholder
+
+Oh no! What is this .placeholder for? So GitHub doesn't ignore the empty folder.
+
+Firstly, plugins/ in Strapi are used to extend the platform's core features.
+
+You can also create a plugin to add new features like authentication, authorization, and so on.

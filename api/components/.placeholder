@@ -1,0 +1,11 @@
+# .placeholder
+
+Oh no! What is this .placeholder for? So GitHub doesn't ignore the empty folder.
+
+Firstly, components/ in Strapi simply define entity attributes that can be reused across multiple content types.
+
+This way, you can define a component once and then reuse it in multiple content types.
+
+For example, you can define a component called address that has the following attributes: street, city, state, and zip code.
+
+Then, you can reuse this component in multiple content types like user, company, and so on.

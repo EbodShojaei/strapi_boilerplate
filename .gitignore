@@ -1,0 +1,14 @@
+node_modules
+package-lock.json
+.DS_Store
+.git
+.tmp
+.cache
+.env
+.env.prod
+build
+backups
+backup.sql
+*.log
+*.prod.*
+*.prod

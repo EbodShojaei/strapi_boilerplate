@@ -1,0 +1,25 @@
+{
+    "kind": "collectionType",
+    "collectionName": "posts",
+    "info": {
+        "name": "Post",
+        "description": ""
+    },
+    "options": {
+        "increments": true,
+        "timestamps": true
+    },
+    "attributes": {
+        "title": {
+            "type": "string",
+            "required": true
+        },
+        "content": {
+            "type": "text",
+            "required": true
+        },
+        "tags": {
+            "type": "json"
+        }
+    }
+}

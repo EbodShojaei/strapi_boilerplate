@@ -1,0 +1,4 @@
+{
+    "provider": "sendmail",
+    "providerOptions": {}
+}

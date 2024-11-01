@@ -1,0 +1,9 @@
+# .placeholder
+
+Oh no! What is this .placeholder for? So GitHub doesn't ignore the empty folder.
+
+Firstly, public/ in Strapi is used to store static files like images, videos, and so on.
+
+For example, you can store images in public/images/ and access them using the URL <http://localhost:1337/images/image.jpg>.
+
+This way, you can store and access static files in Strapi.

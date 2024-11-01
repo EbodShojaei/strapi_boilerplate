@@ -1,0 +1,6 @@
+{
+    "jwtSecret": "your-secret-key",
+    "jwt": {
+        "expiresIn": "30d"
+    }
+}
