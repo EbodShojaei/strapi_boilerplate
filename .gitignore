@@ -1,14 +1,33 @@
+# Dependencies
 node_modules
 package-lock.json
-.DS_Store
-.git
-.tmp
-.cache
-.env
-.env.prod
+
+# Build
 build
-backups
-backup.sql
-*.log
+.cache
+.tmp
+
+# Environment
+.env
+.env.*
+!.env.example
 *.prod.*
 *.prod
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Database
+backups/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
